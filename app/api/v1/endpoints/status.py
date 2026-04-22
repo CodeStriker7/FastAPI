@@ -17,3 +17,4 @@ def chek_status():
     "os": platform.system(),
     "version": "1.0.0"
     }
+  
