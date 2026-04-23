@@ -6,3 +6,6 @@ class StatusResponse(BaseModel):
     timestamp: str
     os: str
     version: str
+    cpu_usage_percent: float
+    ram_usage_percent: float
+    disk_free_gb: float
