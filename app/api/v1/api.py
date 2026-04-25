@@ -12,6 +12,6 @@ api_router.include_router(
 
 api_router.include_router(
     disk.router, 
-    prefix="/disk", 
+    prefix="/status", 
     tags=["Disk Info"] 
 )

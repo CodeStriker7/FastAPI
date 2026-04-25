@@ -6,7 +6,6 @@ router = APIRouter()
 
 @router.get("/disk", response_model=DiskResponse)
 async def disk_status():
-    # Funksiya ichidagi barcha qatorlar bir xil darajada surilishi kerak
     usage = psutil.disk_usage('/')
     return {
         "total_gb": round(usage.total / (2**30), 2),
