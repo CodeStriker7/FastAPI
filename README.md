@@ -1,14 +1,14 @@
-# 🚀 System Monitor API
+# System Monitor API
 
 A lightweight FastAPI-based monitoring tool to track Linux server metrics in real-time.
 
-## 🛠 Tech Stack
+## Tech Stack
 - **FastAPI**
 - **Psutil**
 - **Pydantic**
 - **Uvicorn**
 
-## 🚀 Quick Start
+##  Quick Start
 ```bash
 # Clone the project
 git clone <your-repo-link>
