@@ -4,7 +4,7 @@ from app.schemas.disk import DiskResponse
 
 router = APIRouter()
 
-@router.get("/disk", response_model=DiskResponse)
+@router.get("/info", response_model=DiskResponse)
 async def disk_status():
     usage = psutil.disk_usage('/')
     return {
