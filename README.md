@@ -11,7 +11,7 @@ A lightweight FastAPI-based monitoring tool to track Linux server metrics in rea
 ##  Quick Start
 ```bash
 # Clone the project
-git clone <your-repo-link>
+git clone https://github.com/CodeStriker7/FastAPI.git
 cd FastAPI
 
 # Install dependencies
