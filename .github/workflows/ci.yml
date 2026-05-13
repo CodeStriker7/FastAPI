@@ -27,5 +27,4 @@ jobs:
 
       - name: Run tests with pytest
         run: |
-          # pytest ni to'g'ridan-to'g'ri python moduli sifatida 
-          python -m pytest
+          python -m pytest test.py
