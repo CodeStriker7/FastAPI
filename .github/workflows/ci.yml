@@ -17,13 +17,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          # Bu yerda albatta pytest va flake8 ni o'rnatamiz
+          pip install pytest flake8
 
       - name: Linting with flake8
         run: |
-          # Kodning sifatini tekshiradi (xatolik bo'lsa, pipeline to'xtaydi)
-          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # flake8 ni to'g'ridan-to'g'ri python moduli sifatida 
+          python -m flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
 
       - name: Run tests with pytest
         run: |
-          # Testlar bo'lmasa ham, pytest o'rnatilganligini va ishlayotganini tekshiradi
+          # pytest ni to'g'ridan-to'g'ri python moduli sifatida 
           python -m pytest
